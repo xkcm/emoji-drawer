@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip {
+    color: #0a0;
+}
+
+.playerTableCont {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    opacity: 0.5;
+}
+
+.playerTableCont:hover {
+    opacity: 1;
+}
+
+.text {
+    max-width: 100%;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.text span::selection {
+    background-color: transparent;
+}
+
+.clean {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #666;
+    color: #fff;
+    line-height: 25px;
+    cursor: pointer;
+    transition: .3s background-color ease-in-out;
+}
+
+.clean:hover {
+    background-color: #444;
+}
+
+.copy {
+    left: 50%;
+}
+
+span.draw {
+    display: inline-block !important;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#brush {
+    width: auto !important;
+    height: auto !important;
+}
+
+#start {
+    margin: 20px auto;
+    text-align: center;
+    cursor: pointer;
+    background-color: #444;
+    padding: 10px;
+    color: #fff;
+}
+
+#toolbar {
+    height: 0px;
+    overflow: hidden;
+    transition: .8s all ease-in-out;
+    text-align: center;
+}
+
+input[type=text].specs {
+    width: 30px;
+}
+
+.curr {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#own:checked~.selectCont {
+    display: none;
+}
+
+.ownEmoji {
+    display: none;
+    width: 37px;
+    height: 19px;
+}
+
+#own:checked~.ownEmoji {
+    display: initial;
+}
+
+#own {
+    margin-left: -5px;
+}
+
+.mode {
+    width: 100%;
+    background-color: #666;
+    padding: 10px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-sizing: border-box;
+    transition: .3s background-color ease-in-out;
+    cursor: pointer;
+}
+
+.mode:hover {
+    background-color: #444;
+}
+
+#container {
+    width: 100%;
+    display: table;
+}
+
+#btns {
+    width: 100%;
+}
+
+.selectCont {
+    display: inline-block;
+}
+
+.color {
+    top: 38px;
+}
+
+input[type=color] {
+    width: 60px;
+    text-align: center;
+}
+
+#brush select {
+    width: 60px;
+    text-align: center;
+}
+
+.brushMode {
+    top: 70px;
+}
