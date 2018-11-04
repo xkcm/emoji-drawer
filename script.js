@@ -1,10 +1,12 @@
 window.addEventListener("load",function(){
 //GENERATING EMOJIS
-	//EMOJIS PASTE TO THIS VARIABLE
+	//PASTE EMOJIS TO THIS VARIABLE
 	var emojisDefault="😦😧😥😢😪😓😭😵😲😷😴💤💩😈👿👹👺💀👻👽😺😸😹😻😼😽🙀😿😾",
 		select = document.createElement("select");
 	select.setAttribute('id','firstEmoji');
+	
 	//APPENDING SELECT LISTS
+	
 	for (var i=0;i<=emojisDefault.length-1;i+=2){
 		var emoji = document.createTextNode(String.fromCodePoint(emojisDefault.codePointAt(i)));
 		var option = document.createElement("option");
@@ -56,6 +58,7 @@ window.addEventListener("load",function(){
 			<div class="curr color">current color: <span id="color"><input type="color" value="#0000ff"></span></div>\
 			<div class="curr brushMode">current mode: <span id="ON_OFF"></span></div>';
 		document.body.innerHTML=HTML;
+		// PLAYING MUSIC
 		player_START();
 		
 		if(!mode){
